@@ -176,9 +176,9 @@ Avoid unnecessary parallax, auto-rotating content, layout-shifting animations, o
 
 ## Zoom/reflow
 
-Test zoom and narrow reflow. Do not disable browser zoom with viewport settings.
+Test text resizing to 200% separately from reflow. For vertically scrolling content, test at an equivalent viewport width of 320 CSS px (for example, a 1280 CSS px viewport at 400% browser zoom). For horizontally scrolling content, test at an equivalent height of 256 CSS px. Do not disable browser zoom with viewport settings.
 
-Content and actions must remain usable without two-dimensional scrolling except where a data table/diagram genuinely requires it.
+Content and actions must remain usable without two-dimensional scrolling except for particular content that genuinely requires two-dimensional layout for use or meaning. An excepted table or diagram does not exempt surrounding text and controls. See [W3C Reflow guidance](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html).
 
 ## Accessibility acceptance checks
 
@@ -190,6 +190,7 @@ Content and actions must remain usable without two-dimensional scrolling except 
 - [ ] Dialog/filter sheet manages focus correctly.
 - [ ] Variant color/selected/unavailable states are nonvisual too.
 - [ ] Touch controls meet required/project target sizing.
-- [ ] 200% zoom/reflow remains usable.
+- [ ] Text resizing to 200% remains usable.
+- [ ] Reflow at equivalent 320 CSS px width (or 256 CSS px height for horizontal content) preserves information and functionality, with exceptions limited to genuinely two-dimensional content.
 - [ ] Reduced-motion preference is respected.
 - [ ] Password manager/paste/autofill remain usable.

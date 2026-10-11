@@ -208,7 +208,7 @@ Inspect headings, labels, names/states, live messages, dialog semantics.
 
 ### A3 — Zoom/reflow
 
-Test critical journey at high zoom/narrow reflow; sticky UI must not cover controls.
+Test critical journeys at equivalent 320 CSS px width for vertical content (e.g. 1280 CSS px at 400% browser zoom), or 256 CSS px height for horizontal content. Sticky UI must not cover controls; exceptions for genuinely two-dimensional content do not extend to surrounding text/actions. Separately test text resizing to 200%. See `references/ux/11-accessibility.md`.
 
 ## Mobile journeys
 

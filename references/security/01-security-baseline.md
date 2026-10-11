@@ -65,6 +65,8 @@ session_regenerate_id(true);
 
 Also regenerate after sensitive account state changes where appropriate.
 
+The one-line example above immediately deletes the old session data. It is not a complete rotation design for concurrent requests or unstable mobile/WiFi connections. The [PHP manual](https://www.php.net/manual/en/function.session-regenerate-id.php) warns that immediate deletion can lose sessions or cause inconsistent state. Use a reviewed rotation/expiry strategy appropriate to the session handler; explicitly control access to obsolete IDs and test concurrent requests and lost-cookie recovery. Simply retaining an old authenticated session indefinitely does not solve fixation protection. Check the regeneration result before establishing authenticated state.
+
 ## Session lifetime
 
 Define:

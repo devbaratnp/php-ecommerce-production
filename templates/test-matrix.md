@@ -17,7 +17,8 @@
 | J13 | Return/refund | Delivered order | Return -> refund | States/stock/payment correct | | |
 | J14 | Admin fulfill | New order | Pack -> ship | Valid transitions/audit | | |
 | A1 | Keyboard | Storefront available | Complete purchase by keyboard | Pass | | |
-| A2 | Zoom | 200%/reflow | Purchase path | No hidden controls | | |
+| A2 | Text resize | 200% text resizing | Purchase path | Information and functionality preserved | | |
+| A3 | Reflow | Equivalent 320 CSS px width; 256 CSS px height for horizontal content | Purchase path with sticky UI | No lost information/functionality or two-dimensional scrolling outside applicable content exceptions | | |
 | M1 | Mobile filter | Mobile viewport | Apply/clear filters | State stable | | |
 | P1 | Performance | Mobile lab | Measure PDP | LCP/INP/CLS recorded | | |
 
