@@ -97,7 +97,7 @@ Rules:
 - reduce height after scrolling if useful;
 - never cover anchor targets or focused fields;
 - account for `scroll-padding-top`;
-- test at 200% zoom/reflow;
+- test text resizing to 200% and reflow at equivalent 320 CSS px width separately (see `11-accessibility.md`);
 - do not stack with multiple other sticky bars until content area becomes tiny.
 
 ## Sticky UI budget
